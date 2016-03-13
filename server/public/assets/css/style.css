@@ -1,0 +1,33 @@
+body {
+  margin:10px 200px;
+
+}
+div {
+  background:#81ADB6;
+}
+h1 {
+  text-align: center;
+}
+
+
+.new {
+margin-top:100px;
+}
+
+.clear {
+
+}
+
+form {
+display: inline-block;
+}
+
+button {
+  padding: 10px;
+  margin:10px 30px;
+  border-radius: 10px;
+  background-color: #272729;
+  width: 100px;
+  color:white;
+  font-size: 20px;
+}
