@@ -22,7 +22,7 @@ router.post('/data',function(request,response){
     var result = divide(a,b).toString();
     response.send(result);
   }else{
-    response.send("I am calculating...");
+    response.send("Opps...");
   }
 });
 
