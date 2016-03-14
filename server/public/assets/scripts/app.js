@@ -61,11 +61,13 @@
 //clear the DOM
   function resetDom () {
     $('.result').empty();
+    $('.display').empty();
     newNumbers=[];
     val = {};
     //empty the input
     $("#calculateForm").find("input[type=text]").val("");
     $("#calculateForm").find("input[type=number]").val("");
+
 
   }
 //append number buttons
@@ -81,7 +83,7 @@
     var number = $(this).data("number");
     newNumbers.push(number);
 
-    $("h3").text(number);
+    $(".display").text(newNumbers);
     console.log(newNumbers);
   }
 //convert array to object and send the new data to server
@@ -104,7 +106,7 @@
    }
        newMathNumbers.x = number1,
        newMathNumbers.y = number2,
-       //newMathNumbers.type = newNumbers[1];
+  //newMathNumbers.type = newNumbers[1];
        console.log(newMathNumbers);
      $.ajax({
       type: "POST",
