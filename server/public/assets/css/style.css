@@ -1,5 +1,5 @@
 body {
-  margin:10px 250px;
+  margin:10px 350px;
 
 }
 div {
@@ -24,10 +24,16 @@ display: inline-block;
 
 button {
   padding: 10px;
-  margin:10px 30px;
+  margin:10px;
   border-radius: 10px;
   background-color: #272729;
   width: 100px;
   color:white;
   font-size: 20px;
+}
+
+.display {
+  width: 500px;
+  height: 20px;
+  text-align: right;
 }

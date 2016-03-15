@@ -9,16 +9,16 @@ router.post('/data',function(request,response){
   var value = request.body;
   var a = parseInt(value.x);
   var b = parseInt(value.y);
-  if (value.type == "Add"){
+  if (value.type == "+"){
     var result = add(a,b).toString();
     response.send(result);
-  }else if(value.type == "Subtract"){
+  }else if(value.type == "-"){
     var result = subtract(a,b).toString();
     response.send(result);
-  }else if(value.type == "Multiply"){
+  }else if(value.type == "*"){
     var result = multiply(a,b).toString();
     response.send(result);
-  }else if(value.type == "Divide"){
+  }else if(value.type == "/"){
     var result = divide(a,b).toString();
     response.send(result);
   }else{
